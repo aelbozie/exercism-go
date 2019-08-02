@@ -1,3 +1,3 @@
 # exercismSolutions
 
-Solutions to Scala, Haskell and Python exercises
+Solutions to exercism.io exercises for the Scala, Haskell and Python tracks
