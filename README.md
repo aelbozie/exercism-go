@@ -6,4 +6,4 @@ Some solutions are yet to be moderated by mentors.
 
 ## Contribute
 
-I'd appreciate any feedback via [issues](https://github.com/rootulp/exercism/issues/new).  
+Feedback is appreciated via [issues](https://github.com/rootulp/exercism/issues/new).  
