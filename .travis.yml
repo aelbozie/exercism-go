@@ -1,0 +1,8 @@
+language: python
+python: 3.6
+install:
+  - pip install .
+script:
+    - pytest python/high-scores/high_scores_test.py
+    - pytest python/matrix/matrix_test.py
+    - pytest python/ntwo-fer/two_fer_test.py
