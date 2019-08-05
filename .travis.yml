@@ -1,4 +1,11 @@
-language: python
-python: 3.6
-script:
-    - pytest 
+
+matrix:
+  include:
+    -language: python
+     python: 3.6
+     script:
+         - pytest 
+    -language: scala
+     scala: 2.12
+     script:
+         - sbt ++$TRAVIS_SCALA_VERSION test
