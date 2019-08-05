@@ -4,8 +4,10 @@ matrix:
     -language: python
      python: 3.6
      script:
+         - cd python
          - pytest 
     -language: scala
      scala: 2.12
      script:
+         - cd scala
          - sbt ++$TRAVIS_SCALA_VERSION test
