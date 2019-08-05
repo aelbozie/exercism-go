@@ -1,12 +1,12 @@
 matrix:
   include:
-    -language: python
-     python: 3.6
-     script:
-         - cd python
-         - pytest 
-    -language: scala
-     scala: 2.12
-     script:
-         - cd scala
-         - for i in $( ls); do  cd $i; echo testing $i; sbt ++$TRAVIS_SCALA_VERSION test; cd ..  ; done 
+    - language: python
+      python: 3.6
+      script:
+          - cd python
+          - pytest 
+    - language: scala
+      scala: 2.12.1
+      script:
+          - cd scala
+          - for i in $( ls); do  cd $i; echo testing $i; sbt ++$TRAVIS_SCALA_VERSION test; cd ..  ; done
