@@ -15,5 +15,5 @@ object Bob {
     }
   }
   def hasLetters(statement: String): Boolean =
-    statement.toLowerCase.exists(('a' to 'z').toSet.contains(_))
+    statement.toLowerCase.exists(('a' to 'z').contains(_))
 }
