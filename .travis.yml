@@ -11,7 +11,7 @@ matrix:
           - cd scala
           - chmod +x run_test.sh
           - "./run_test.sh"
-    - language: minimal
+    - language: haskell
       sudo: false
       # Caching so the next build will be fast too.
       cache:
@@ -25,6 +25,7 @@ matrix:
       # Configure stack to use the system GHC installation
           - stack config set system-ghc --global true
           - export PATH=/opt/ghc/7.10.2/bin:$PATH
+      install: true
       addons:
         apt:
           sources:
@@ -33,4 +34,6 @@ matrix:
           - ghc-7.10.2
 
       script:
-          - stack --no-terminal --skip-ghc-check test
+          - cd haskell
+          - chmod +x run_test.sh
+          - "./run_test.sh"
