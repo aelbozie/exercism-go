@@ -11,3 +11,6 @@ matrix:
           - cd scala
           - chmod +x run_test.sh
           - "./run_test.sh"
+    - language: haskell
+      script:
+          - stack --no-terminal --skip-ghc-check test
