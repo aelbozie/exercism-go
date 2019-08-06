@@ -9,4 +9,4 @@ matrix:
       scala: 2.12.1
       script:
           - cd scala
-          - run_test.sh
+          - ./run_test.sh
