@@ -1,12 +1,11 @@
 class Matrix(object):
     def __init__(self, matrix_string):
-        self.matrix_string = matrix_string.split('\n')
-
+        self.rows = [list(map(int, row.split(' ')))
+                     for row in  matrix_string.split('\n')]
+        self.columns = [list(column) for column in zip(*self.rows)]
+        
     def row(self, index):
-        return list(map(int, self.matrix_string[index -1].split()))
+        return self.rows[index - 1]
 
     def column(self, index):
-        column = []
-        for i in range(len(self.matrix_string)):
-            column.append(int(self.matrix_string[i].split()[index-1]))
-        return column
+        return self.columns[index - 1]
