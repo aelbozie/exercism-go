@@ -1,26 +1,26 @@
 object SpaceAge {
   
-  def onEarth(seconds:Double ): Double =
-    seconds / 31557600
+  def onEarth(seconds:Double, divisor: Double = 31557600): Double =
+    seconds / divisor
 
-  def onMercury(seconds: Double): Double =
-    onEarth(seconds) / 0.2408467
+  def onMercury(seconds: Double, divisor: Double = 0.2408467): Double =
+    onEarth(seconds) / divisor
 
-  def onVenus(seconds:Double): Double =
-    onEarth(seconds) / 0.61519726
+  def onVenus(seconds:Double, divisor: Double = 0.61519726): Double =
+    onEarth(seconds) / divisor
 
-  def onMars(seconds:Double): Double =
-    onEarth(seconds) / 1.880815
+  def onMars(seconds:Double, divisor: Double = 1.880815): Double =
+    onEarth(seconds) / divisor
 
-  def onJupiter(seconds:Double): Double =
-    onEarth(seconds) / 11.862615
+  def onJupiter(seconds:Double, divisor: Double = 11.862615): Double =
+    onEarth(seconds) / divisor
 
-  def onSaturn(seconds: Double): Double =
-    onEarth(seconds) / 29.447498
+  def onSaturn(seconds: Double, divisor: Double = 29.447498): Double =
+    onEarth(seconds) / divisor
 
-  def onUranus(seconds: Double): Double =
-    onEarth(seconds) / 84.016846
+  def onUranus(seconds: Double, divisor: Double = 84.016846): Double =
+    onEarth(seconds) / divisor
 
-  def onNeptune(seconds: Double): Double =
-    onEarth(seconds) / 164.79132
+  def onNeptune(seconds: Double, divisor: Double = 164.79132): Double =
+    onEarth(seconds) / divisor
 } 
