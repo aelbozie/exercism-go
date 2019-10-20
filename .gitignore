@@ -1,0 +1,11 @@
+target/
+\#*.*\#
+project/
+.exercism
+.bloop/
+.metals/
+.keep
+*.lock
+__pycache__/
+.stack-work/
+*~
