@@ -1,4 +1,3 @@
-
 object Bob {
   def response(statement: String): String = {
     statement.trim match {
@@ -17,12 +16,12 @@ object Bob {
 
   def isShoutingQuestion(statement: String): Boolean =
     statement.toUpperCase == statement &&
-  hasLetters(statement) &&
-  isQuestion(statement)
+      hasLetters(statement) &&
+      isQuestion(statement)
 
   def isShouting(statement: String): Boolean =
     statement.toUpperCase == statement &&
-  hasLetters(statement)
+      hasLetters(statement)
 
   def isQuestion(statement: String): Boolean =
     statement.endsWith("?")
