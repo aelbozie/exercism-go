@@ -2,7 +2,7 @@ class Matrix(object):
     def __init__(self, matrix_string):
         self.rows = [list(map(int, row.split(' ')))
                      for row in  matrix_string.split('\n')]
-        
+
     def row(self, index):
         return self.rows[index - 1]
 
