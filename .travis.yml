@@ -4,7 +4,10 @@ matrix:
       python: 3.6
       script:
           - cd python
-          - pytest 
+          - coverage run -m pytest
+          - coverage report -m
+          - coverage xml
+          - python-codacy-coverage -r coverage.xml
     - language: scala
       scala: 2.12.1
       script:
