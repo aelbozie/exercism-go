@@ -4,6 +4,7 @@ matrix:
       python: 3.6
       script:
           - cd python
+          - pip install -r requirements.txt
           - coverage run -m pytest
           - coverage report -m
           - coverage xml
