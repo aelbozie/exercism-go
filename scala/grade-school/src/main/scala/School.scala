@@ -1,11 +1,11 @@
-class School {
-  type DB = Map[Int, Seq[String]]
+// class School {
+//   type DB = Map[Int, Seq[String]]
 
-  def add(name: String, g: Int) = ???
+//   def add(name: String, g: Int) = ???
 
-  def db: DB = ???
+//   def db: DB = ???
 
-  def grade(g: Int): Seq[String] = ???
+//   def grade(g: Int): Seq[String] = ???
 
-  def sorted: DB = ???
-}
+//   def sorted: DB = ???
+// }
