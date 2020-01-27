@@ -5,7 +5,7 @@ matrix:
       script:
           - cd python
           - pip install -r requirements.txt
-          - coverage run -m pytest
+          - coverage run --source=. -m pytest
           - coverage report -m
           - coverage xml
           - python-codacy-coverage -r coverage.xml
