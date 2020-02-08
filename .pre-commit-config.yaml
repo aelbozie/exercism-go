@@ -9,14 +9,8 @@ repos:
     hooks:
       - id: check-yaml
         name: Check YAML files
-      - id: detect-aws-credentials
-        name: Detect AWS secrets
       - id: detect-private-key
         name: Detect private keys
-      - id: no-commit-to-branch
-        args:
-          - --branch=master
-        name: Don't commit to master
   - repo: https://github.com/pre-commit/mirrors-autopep8
     rev: v1.4.4
     hooks:
@@ -28,7 +22,3 @@ repos:
         args:
           - -m=3
         name: Sort imports with isort
-  - repo: https://github.com/Lucas-C/pre-commit-hooks-markup
-    sha: v1.0.0
-    hooks:
-      - id: rst-linter
