@@ -1,5 +1,15 @@
 matrix:
   include:
+    - language: bash
+      sudo: true
+      before_install:
+        - sudo add-apt-repository ppa:duggan/bats --yes
+        - sudo apt-get update -qq
+        - sudo apt-get install -qq bats
+      script:
+        - cd bash
+        - chmod +x run_test.sh
+        - "./run_test.sh"
     - language: python
       python: 3.6
       script:
