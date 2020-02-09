@@ -9,7 +9,7 @@ matrix:
       script:
         - cd bash
         - chmod +x run_test.sh
-        - "./run_test.sh"
+        - "./run_tests.sh"
     - language: python
       python: 3.6
       script:
@@ -24,7 +24,7 @@ matrix:
       script:
           - cd scala
           - chmod +x run_test.sh
-          - "./run_test.sh"
+          - "./run_tests.sh"
     - language: haskell
       sudo: false
       # Caching so the next build will be fast too.
@@ -50,4 +50,4 @@ matrix:
       script:
           - cd haskell
           - chmod +x run_test.sh
-          - "./run_test.sh"
+          - "./run_tests.sh"
