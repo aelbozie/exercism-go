@@ -7,7 +7,7 @@ set -o nounset
 
    main() {
 
-   input=${1:-"World"}
+   input=${@:-"World"}
 
    echo "Hello, $input!"
 
