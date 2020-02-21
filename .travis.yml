@@ -8,7 +8,7 @@ matrix:
         - sudo apt-get install -qq bats
       script:
         - cd bash
-        - chmod +x run_test.sh
+        - chmod +x run_tests.sh
         - "./run_tests.sh"
     - language: python
       python: 3.6
@@ -23,7 +23,7 @@ matrix:
       scala: 2.12.1
       script:
           - cd scala
-          - chmod +x run_test.sh
+          - chmod +x run_tests.sh
           - "./run_tests.sh"
     - language: haskell
       sudo: false
@@ -49,5 +49,5 @@ matrix:
 
       script:
           - cd haskell
-          - chmod +x run_test.sh
+          - chmod +x run_tests.sh
           - "./run_tests.sh"
