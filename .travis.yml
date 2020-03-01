@@ -1,11 +1,11 @@
 matrix:
   include:
-    - language: elm
-      install: sudo npm install -g elm@elm0.19.1 --unsafe-perm=true
-      script:
-        - cd elm
-        - chmod +x run_tests.sh
-        - "./run_tests"
+          #  - language: elm
+          #install: sudo npm install -g elm@elm0.19.1 --unsafe-perm=true
+          #script:
+          #- cd elm
+          #- chmod +x run_tests.sh
+          #- "./run_tests"
     - language: bash
       sudo: true
       before_install:
