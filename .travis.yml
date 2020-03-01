@@ -2,6 +2,7 @@ matrix:
   include:
     - language: elm
       node_js: '12.16.0'
+      elm: latest-0.19.1
       install: sudo npm install -g elm@elm0.19.1 --unsafe-perm=true
       elm-test: latest-0.19.1
       elm-format: latest-0.19.1
