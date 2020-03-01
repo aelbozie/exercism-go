@@ -8,7 +8,7 @@ matrix:
       script:
         - cd elm
         - chmod +x run_tests.sh
-        - "./run_tests"
+        - "./run_tests.sh"
     - language: bash
       sudo: true
       before_install:
