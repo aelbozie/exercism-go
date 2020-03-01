@@ -1,5 +1,10 @@
 matrix:
   include:
+    - language: elm
+      script:
+        - cd elm
+        - chmod +x run_tests.sh
+        - "./run_tests"
     - language: bash
       sudo: true
       before_install:
