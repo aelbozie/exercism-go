@@ -1,14 +1,5 @@
 matrix:
   include:
-    - language: elm
-      node_js: '12.16.0'
-      elm: latest-0.19.1
-      elm-test: latest-0.19.1
-      elm-format: latest-0.19.1
-      script:
-        - cd elm
-        - chmod +x run_tests.sh
-        - "./run_tests.sh"
     - language: bash
       sudo: true
       before_install:
