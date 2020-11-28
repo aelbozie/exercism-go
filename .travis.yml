@@ -26,6 +26,7 @@ matrix:
           - chmod +x run_tests.sh
           - "./run_tests.sh"
     - language: clojure
+      install: true
       script:
           - cd clojure
           - chmod +x run_tests.sh
