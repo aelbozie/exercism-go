@@ -1,16 +1,28 @@
-target/
-\#*.*\#
 project/
 .exercism
+
+# jvm
+target/
+
+# clojure
+.lein-failures
+
+
+# scala
 .bloop/
 .metals/
 .keep
 *.lock
+
+# python
 __pycache__/
 .mypy_cache/
-.stack-work/
-*~
 venv/
 .coverage
-elm-stuff/
+
+# haskell
+.stack-work/
+
+# ide
 .vim/
+*~

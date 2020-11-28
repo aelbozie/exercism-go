@@ -2,9 +2,9 @@
 set -eo pipefail
 
 for folder in $(ls -d -- */);
-do  
+do
 cd "$folder";
-echo -e "\e[1;32m==========testing $folder==========";
+echo -e "\e[1;32m==========testing $folder==========\e[0;0m";
 stack test;
 cd ..  ;
 done

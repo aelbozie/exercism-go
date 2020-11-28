@@ -25,6 +25,11 @@ matrix:
           - cd scala
           - chmod +x run_tests.sh
           - "./run_tests.sh"
+    - language: clojure
+      script:
+          - cd clojure
+          - chmod +x run_tests.sh
+          - "./run_tests.sh"
     - language: haskell
       sudo: false
       # Caching so the next build will be fast too.
