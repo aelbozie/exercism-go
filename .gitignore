@@ -12,7 +12,6 @@ target/
 .bloop/
 .metals/
 .keep
-*.lock
 
 # python
 __pycache__/
