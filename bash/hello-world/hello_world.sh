@@ -5,12 +5,13 @@ set -o errexit
 # This option will make the script exit when it tries to use an unset variable
 set -o nounset
 
-   main() {
+main() {
 
-   input=${@:-"World"}
+    input=${@:-"World"}
 
-   echo "Hello, $input!"
+    echo "Hello, $input!"
 
-   exit 0
+    exit 0
 }
-   main "$@"
+
+main "$@"
