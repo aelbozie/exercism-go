@@ -6,7 +6,9 @@ target/
 
 # clojure
 .lein-failures
-
+.calva/
+.lein-repl-history
+.lsp/
 
 # scala
 .bloop/
