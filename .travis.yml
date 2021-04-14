@@ -1,7 +1,6 @@
 matrix:
   include:
     - language: bash
-      sudo: true
       before_install:
         - sudo add-apt-repository ppa:duggan/bats --yes
         - sudo apt-get update -qq
@@ -31,8 +30,12 @@ matrix:
           - cd clojure
           - chmod +x run_tests.sh
           - "./run_tests.sh"
+    - language: go
+      script:
+          - cd go
+          - chmod +x run_tests.sh
+          - "./run_tests.sh"
     - language: haskell
-      sudo: false
       # Caching so the next build will be fast too.
       cache:
         directories:
