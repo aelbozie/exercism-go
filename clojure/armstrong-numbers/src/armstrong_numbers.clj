@@ -2,7 +2,11 @@
 
 (defn- digits
   [n]
-  (map #(Character/digit % 10) (str n)))
+  (->> n
+       (iterate #(quot % 10))
+       (take-while pos?)
+       (mapv #(mod % 10))
+       (rseq)))
 
 (defn- pow
   [base exp]
