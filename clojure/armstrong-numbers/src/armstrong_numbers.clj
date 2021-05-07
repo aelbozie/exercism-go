@@ -8,9 +8,10 @@
        (mapv #(mod % 10))
        (rseq)))
 
+
 (defn- pow
   [base exp]
-  (reduce * (repeat exp base)))
+  (apply * (repeat exp base)))
 
 (defn armstrong? [n]
   (let [bases (digits n)
