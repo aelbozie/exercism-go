@@ -5,8 +5,7 @@
   (->> n
        (iterate #(quot % 10))
        (take-while pos?)
-       (mapv #(mod % 10))
-       (rseq)))
+       (map #(mod % 10))))
 
 
 (defn- pow
@@ -16,6 +15,7 @@
 (defn armstrong? [n]
   (let [bases (digits n)
         exp (count bases)]
-    (= n
-       (reduce + (map #(pow % exp) bases)))))
+    (->> (map #(pow % exp) bases)
+         (apply +)
+         (= n))))
 

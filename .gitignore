@@ -9,6 +9,7 @@ target/
 .calva/
 .lein-repl-history
 .lsp/
+.nrepl-port
 
 # scala
 .bloop/
