@@ -1,5 +1,5 @@
 object SpaceAge {
-  
+
   def onEarth(seconds:Double, divisor: Double = 31557600): Double =
     seconds / divisor
 
@@ -23,4 +23,4 @@ object SpaceAge {
 
   def onNeptune(seconds: Double, divisor: Double = 164.79132): Double =
     onEarth(seconds) / divisor
-} 
+}
