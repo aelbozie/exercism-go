@@ -1,6 +1,6 @@
 project/
 .exercism
-
+.xml
 # jvm
 target/
 
