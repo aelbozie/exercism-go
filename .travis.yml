@@ -13,11 +13,8 @@ matrix:
       python: 3.6
       script:
           - cd python
-          - pip install -r requirements.txt
-          - coverage run -m pytest
-          - coverage report -m
-          - coverage xml
-          - python-codacy-coverage -r coverage.xml
+          - chmod +x run_tests.sh
+          - "./run_tests.sh"
     - language: scala
       scala: 2.12.1
       script:
