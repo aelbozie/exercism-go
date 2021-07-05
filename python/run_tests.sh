@@ -10,6 +10,6 @@ echo -e "\e[1;32m==========testing $folder==========\e[0;0m";
 
 pyproj=$(echo $folder | sed "s,-,_," )
 pytest --cov="$pyproj" --cov-report xml
-bash <(curl -Ls https://coverage.codacy.com/get.sh) report --partial -r coverage.xml;
+bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage.xml;
 cd ..  ;
 done
