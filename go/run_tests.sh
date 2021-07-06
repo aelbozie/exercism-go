@@ -1,12 +1,16 @@
 #!/bin/bash
 set -eo pipefail
 
-for folder in $(ls -d -- */);
+dirs=$(ls -d -- */);
+
+for dir in $dirs
 do
-cd "$folder";
-echo -e "\e[1;32m==========testing $folder==========\e[0;0m";
-go test -v --bench . --benchmem;
-go test -coverprofile=cover.out;
-bash <(curl -Ls https://coverage.codacy.com/get.sh) report --force-coverage-parser go -r cover.out;
-cd ..  ;
+    cd "$dir";
+    echo -e "\e[1;32m==========testing $dir==========\e[0;0m";
+    go test -v --bench . --benchmem;
+    go test -coverprofile=cover.out;
+    bash <(curl -Ls https://coverage.codacy.com/get.sh) report --partial --force-coverage-parser go -r cover.out;
+    cd ..
 done
+
+bash <(curl -Ls https://coverage.codacy.com/get.sh) final;
