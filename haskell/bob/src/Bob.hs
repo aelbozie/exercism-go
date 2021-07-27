@@ -7,9 +7,12 @@ import           Data.Text (Text)
 
 responseFor :: Text -> Text
 responseFor text
-    | asking, yelling, hasLetters = T.pack "Calm down, I know what I'm doing!"
+    | asking
+    , yelling
+    , hasLetters = T.pack "Calm down, I know what I'm doing!"
+    | yelling
+    , hasLetters = T.pack "Who, chill out!"
     | asking = T.pack "Sure."
-    | yelling, hasLetters = T.pack "Whoa, chill out!"
     | empty = T.pack "Fine. Be that way!"
     | otherwise  = T.pack "Whatever."
         where
