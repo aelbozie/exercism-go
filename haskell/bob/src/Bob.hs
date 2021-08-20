@@ -11,7 +11,7 @@ responseFor text
     , yelling
     , hasLetters = T.pack "Calm down, I know what I'm doing!"
     | yelling
-    , hasLetters = T.pack "Who, chill out!"
+    , hasLetters = T.pack "Whoa, chill out!"
     | asking = T.pack "Sure."
     | empty = T.pack "Fine. Be that way!"
     | otherwise  = T.pack "Whatever."
