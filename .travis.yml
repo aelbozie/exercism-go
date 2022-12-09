@@ -15,12 +15,6 @@ matrix:
           - cd python
           - chmod +x run_tests.sh
           - "./run_tests.sh"
-#     - language: scala
-#       scala: 2.12.1
-#       script:
-#           - cd scala
-#           - chmod +x run_tests.sh
-#           - "./run_tests.sh"
     - language: clojure
       install: true
       script:
