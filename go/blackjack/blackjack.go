@@ -28,23 +28,23 @@ func FirstTurn(card1, card2, dealerCard string) string {
 	handScore := ParseCard(card1) + ParseCard(card2)
 
 	dealerScore := ParseCard(dealerCard)
-
+	var decision string
 	switch {
 	case handScore == 22:
-		return "P"
+		decision = "P"
 	case handScore == 21 && dealerScore >= 10:
-		return "S"
+		decision = "S"
 	case handScore == 21:
-		return "W"
+		decision = "W"
 	case 17 <= handScore && handScore <= 20:
-		return "S"
+		decision = "S"
 	case 12 <= handScore && handScore <= 16 && dealerScore >= 7:
-		return "H"
+		decision = "H"
 	case 12 <= handScore && handScore <= 16:
-		return "S"
+		decision = "S"
 	default:
-		return "H"
+		decision = "H"
 
 	}
-
+	return decision
 }
