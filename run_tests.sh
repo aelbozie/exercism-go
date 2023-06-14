@@ -2,7 +2,7 @@
 set -eo pipefail
 
 dirs=$(ls -d -- */);
-
+export CODACY_PROJECT_TOKEN=$1
 for dir in $dirs
 do
     cd "$dir";
@@ -12,5 +12,4 @@ do
     bash <(curl -Ls https://coverage.codacy.com/get.sh) report --partial --force-coverage-parser go -r cover.out;
     cd ..
 done
-
 bash <(curl -Ls https://coverage.codacy.com/get.sh) final;
