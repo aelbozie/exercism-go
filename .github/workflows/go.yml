@@ -22,4 +22,4 @@ jobs:
         go-version: 1.19
 
     - name: Test
-      run: run_tests.sh
+      run: ./../../run_tests.sh
