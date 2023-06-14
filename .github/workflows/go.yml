@@ -23,4 +23,6 @@ jobs:
         go-version: 1.19
 
     - name: Test
+      env: # Or as an environment variable
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
       run: ./run_tests.sh $CODACY_PROJECT_TOKEN
