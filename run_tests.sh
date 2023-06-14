@@ -12,5 +12,5 @@ do
     bash <(curl -Ls https://coverage.codacy.com/get.sh) report --partial --force-coverage-parser go -r cover.out;
     cd ..
 done
-CODACY_PROJECT_TOKEN=$1
+export CODACY_PROJECT_TOKEN=$1
 bash <(curl -Ls https://coverage.codacy.com/get.sh) final;
