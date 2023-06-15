@@ -1,29 +1,8 @@
 project/
 .exercism
-*.xml
-# jvm
-target/
 
-# clojure
-.lein-failures
-.calva/
-.lein-repl-history
-.lsp/
-.nrepl-port
-
-# scala
-.bloop/
-.metals/
-.keep
-
-# python
-__pycache__/
-.mypy_cache/
-venv/
-.coverage
-
-# haskell
-.stack-work/
+#go
+./go
 
 # ide
 .vim/
