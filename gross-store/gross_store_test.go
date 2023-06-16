@@ -181,7 +181,7 @@ func TestRemoveItem(t *testing.T) {
 
 func TestNewBill(t *testing.T) {
 	// Success, zero out the  bill
-	t.Run("Should reset customerbill", func(t *testing.T) {
+	t.Run("Should reset customer bill", func(t *testing.T) {
 		bill := NewBill()
 
 		if len(bill) != 0 {
