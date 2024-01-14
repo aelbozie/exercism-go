@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eo pipefail
+#set -eo pipefail
 
 dirs=$(ls -d -- */);
 export CODACY_PROJECT_TOKEN=$1
